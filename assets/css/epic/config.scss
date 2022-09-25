@@ -1,3 +1,20 @@
+@use "sass:color";
+
+$media-query: max-width;
+
+$breakpoints: (
+  '': '',
+  xxl: 1600px,
+  xl: 1400px,
+  lg: 1200px,
+  md: 1000px,
+  sm: 800px,
+  xs: 600px,
+  xxs: 400px
+);
+
+$grid-columns: 12;
+
 $fonts: (
   body: ('Roboto', sans-serif),
   heading: ('Oswald', sans-serif),
@@ -6,7 +23,7 @@ $fonts: (
 
 $colors: (
   primary: #1e79b5,
-  secondary: #1eb538,
+  secondary: color.adjust(#1e79b5, $lightness: -15%),
   light: #fff,
   "gray": #ddd,
   dark: #000,
@@ -30,7 +47,7 @@ $spacing: (
 
 $utilities: (
   display: (
-    name: display,
+    name: d,
     values: (
       none: none,
       block: block,
@@ -38,7 +55,7 @@ $utilities: (
     )
   ),
   text-align: (
-    name: text-align,
+    name: ta,
     values: (
       left: left,
       center: center,
@@ -46,7 +63,7 @@ $utilities: (
     )
   ),
   max-width: (
-    name: max-width,
+    name: mw,
     values: (
       sm: 500px
     )
@@ -60,4 +77,4 @@ $utilities: (
       between: space-between
     )
   )
-)
+);

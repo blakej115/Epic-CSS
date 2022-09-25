@@ -1,0 +1,37 @@
+@use '../config' as *;
+@use "sass:map";
+
+@mixin build-utils($bp) {
+  @if ($bp != '') {
+    $bp: $bp + '\:';
+  }
+
+  @for $i from 1 through $grid-columns {
+    .#{$bp}total-#{$i} {
+      --total: #{$i};
+    }
+    .#{$bp}span-#{$i} {
+      --span: #{$i};
+    }
+  }
+
+  @each $property, $utility in $utilities {
+    $name: map.get($utility, "name");
+    $values: map.get($utility, "values");
+    @each $value-name, $value in $values {
+      .#{$bp}#{$name}-#{$value-name} {
+        #{$property}: $value;
+      }
+    }
+  }
+}
+
+@each $name, $width in $breakpoints {
+  @if $name == '' or $width == '' {
+    @include build-utils($name);
+  } @else {
+    @media (#{$media-query}: $width) {
+      @include build-utils($name);
+    }
+  }
+}

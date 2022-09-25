@@ -1,0 +1,17 @@
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  > [class*="span-"] {
+    flex-basis: calc((100% / var(--total)) * var(--span));
+  }
+}
+
+.css-grid {
+  display: grid;
+  &[class*="total-"] {
+    grid-template-columns: repeat(var(--total), minmax(0, 1fr));
+  }
+  > [class*="span-"] {
+    grid-column: span var(--span);
+  }
+}

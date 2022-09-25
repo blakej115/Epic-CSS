@@ -1,23 +1,23 @@
-@use '../config/scss-vars' as *;
+@use '../config' as *;
 
-.buttons {
+.btns {
   display: flex;
   flex-wrap: wrap;
   gap: var(--y-sm) var(--x-sm);
 }
 
-[class*="button-"] {
+[class*="btn-"] {
   display: block;
   color: #fff;
   padding: .5rem 1rem;
   border-radius: var(--border-radius);
   &:hover {
-    background-color: var(--dark);
+    background-color: var(--secondary);
   }
 }
 
 @each $name, $color in $colors {
-  .button-#{$name} {
-    background-color: $color;
+  .btn-#{$name} {
+    background-color: var(--#{$name});
   }
 }

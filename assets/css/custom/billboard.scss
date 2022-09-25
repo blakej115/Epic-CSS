@@ -1,7 +1,6 @@
 .billboard {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: var(--billboard-height, 100vh);
 }

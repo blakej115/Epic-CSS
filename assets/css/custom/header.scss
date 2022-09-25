@@ -1,11 +1,11 @@
-@use 'typography';
+@use '../epic/components/typography';
 
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: var(--header-bg);
+  background-color: var(--gray);
   padding: var(--y-xs) var(--x-md);
   display: flex;
   justify-content: space-between;
@@ -14,8 +14,8 @@
 .logo {
   a {
     display: block;
-  }
-  .logo-text {
-    @extend .h6;
+    h1 {
+      @extend .h6;
+    }
   }
 }

@@ -2,14 +2,14 @@
   <header class="header">
     <div class="logo">
       <a href="#">
-        <h1 class="logo-text">Epic CSS</h1>
+        <h1>Epic CSS</h1>
       </a>
     </div>
     <nav class="nav">
       <button class="menu" data-epic="menu">Menu</button>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <NuxtLink to="/">Home</NuxtLink>
         </li>
         <li>
           <a href="#">Get Started</a>
@@ -18,7 +18,7 @@
           <a href="#">Documentation</a>
         </li>
         <li>
-          <a href="#">Examples</a>
+          <NuxtLink to="/examples">Examples</NuxtLink>
         </li>
         <li>
           <a href="#">Github</a>
