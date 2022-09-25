@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  align-items: center;
+  ul {
+    display: flex;
+    list-style: none;
+    ul {
+      flex-direction: column;
+    }
+    li {
+      a {
+        display: block;
+        padding: .5rem 1rem;
+      }
+    }
+  }
+}
+
+.menu {
+  display: none;
+}

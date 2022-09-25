@@ -1,12 +1,12 @@
 @use 'scss-vars' as *;
 
 :root {
-  @each $name, $font in $fonts {
-    --#{$name}-font: #{$font};
+  @each $name, $color in $colors {
+    --#{$name}: #{$color};
   }
 
-  @each $name, $color in $colors {
-    --#{$name}-color: #{$color};
+  @each $name, $font in $fonts {
+    --#{$name}-font: #{$font};
   }
 
   @each $axis, $values in $spacing {
@@ -15,6 +15,13 @@
     }
   }
 
+  --link-color: var(--primary);
+
+  --header-bg: var(--gray);
+  --footer-bg: var(--gray);
+
   --transition: .4s;
   --border-radius: .25rem;
+
+  --min-textarea-height: 300px;
 }

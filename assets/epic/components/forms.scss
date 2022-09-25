@@ -1,0 +1,14 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--y) var(--x);
+}
+
+.input {
+  &.text,
+  &.textarea {
+  }
+  &.textarea {
+    min-height: var(--min-textarea-height);
+  }
+}

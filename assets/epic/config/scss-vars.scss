@@ -8,19 +8,23 @@ $colors: (
   primary: #1e79b5,
   secondary: #1eb538,
   light: #fff,
-  dark: #000
+  "gray": #ddd,
+  dark: #000,
 );
 
 $spacing: (
   x: (
+    xs: .5rem,
     sm: 1rem,
     md: 2rem,
     lg: 3rem
   ),
   y: (
+    xs: 1rem,
     sm: 2rem,
     md: 4rem,
-    lg: 6rem
+    lg: 6rem,
+    xl: 8rem
   )
 );
 
@@ -48,11 +52,12 @@ $utilities: (
     )
   ),
   justify-content: (
-    name: justify-content,
+    name: jc,
     values: (
-      flex-start: flex-start,
+      start: flex-start,
       center: center,
-      flex-end: flex-end
+      end: flex-end,
+      between: space-between
     )
   )
 )

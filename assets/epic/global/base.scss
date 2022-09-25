@@ -6,6 +6,17 @@ body {
   font-family: var(--body-font);
 }
 
+a {
+  color: var(--link-color);
+}
+
+img,
+svg,
+iframe {
+  display: block;
+  max-width: 100%;
+}
+
 code {
   font-family: var(--monospace-font);
 }
