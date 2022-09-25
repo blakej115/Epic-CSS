@@ -1,6 +1,8 @@
 @use "sass:color";
 
-$media-query: max-width;
+// Breakpoints
+
+$media-query: max-width !default;
 
 $breakpoints: (
   '': '',
@@ -11,15 +13,21 @@ $breakpoints: (
   sm: 800px,
   xs: 600px,
   xxs: 400px
-);
+) !default;
 
-$grid-columns: 12;
+// Grid
+
+$grid-columns: 12 !default;
+
+// Fonts
 
 $fonts: (
-  body: ('Roboto', sans-serif),
-  heading: ('Oswald', sans-serif),
-  monospace: ('Roboto Mono', monospace)
-);
+  body: (Arial, sans-serif),
+  heading: (Verdana, sans-serif),
+  monospace: ('Courier New',monospace)
+) !default;
+
+// Colors
 
 $colors: (
   primary: #1e79b5,
@@ -27,7 +35,9 @@ $colors: (
   light: #fff,
   "gray": #ddd,
   dark: #000,
-);
+) !default;
+
+// Spacing
 
 $spacing: (
   x: (
@@ -43,7 +53,9 @@ $spacing: (
     lg: 6rem,
     xl: 8rem
   )
-);
+) !default;
+
+// Utilities
 
 $utilities: (
   display: (
@@ -77,4 +89,4 @@ $utilities: (
       between: space-between
     )
   )
-);
+) !default;

@@ -12,16 +12,9 @@
           <NuxtLink to="/">Home</NuxtLink>
         </li>
         <li>
-          <a href="#">Get Started</a>
-        </li>
-        <li>
-          <a href="#">Documentation</a>
-        </li>
-        <li>
-          <NuxtLink to="/examples">Examples</NuxtLink>
-        </li>
-        <li>
-          <a href="#">Github</a>
+          <a href="https://github.com/blakej115/Epic-CSS" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
         </li>
       </ul>
     </nav>

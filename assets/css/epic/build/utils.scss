@@ -3,8 +3,10 @@
 
 @mixin build-utils($bp) {
   @if ($bp != '') {
-    $bp: $bp + '\:';
+    $bp: $bp + '\\:';
   }
+
+  // Grid
 
   @for $i from 1 through $grid-columns {
     .#{$bp}total-#{$i} {
@@ -14,6 +16,13 @@
       --span: #{$i};
     }
   }
+
+  .#{$bp}span-fill {
+    --span: unset;
+    flex-grow: 1;
+  }
+
+  // Utilities
 
   @each $property, $utility in $utilities {
     $name: map.get($utility, "name");

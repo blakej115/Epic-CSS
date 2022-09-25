@@ -1,4 +1,5 @@
-@use 'build/css-vars';
-@use 'global';
-@use 'components';
-@use 'build/utils';
+@forward 'config';
+@forward 'build/css-vars';
+@forward 'global';
+@forward 'components';
+@forward 'build/utils';

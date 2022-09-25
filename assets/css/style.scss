@@ -1,2 +1,9 @@
-@use 'epic';
+@use 'epic' with (
+  $fonts: (
+    body: ('Roboto', sans-serif),
+    heading: ('Oswald', sans-serif),
+    monospace: ('Roboto Mono', monospace)
+  )
+);
+
 @use 'custom';
