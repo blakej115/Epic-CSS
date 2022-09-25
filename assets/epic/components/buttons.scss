@@ -1,0 +1,23 @@
+@use '../config/scss-vars' as *;
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--y-sm) var(--x-sm);
+}
+
+[class*="button-"] {
+  display: block;
+  color: #fff;
+  padding: .5rem 1rem;
+  border-radius: var(--border-radius);
+  &:hover {
+    background-color: var(--dark-color);
+  }
+}
+
+@each $name, $color in $colors {
+  .button-#{$name} {
+    background-color: $color;
+  }
+}
