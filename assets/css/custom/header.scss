@@ -5,7 +5,8 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--gray);
+  background-color: var(--light);
+  border-bottom: var(--border);
   padding: var(--y-xs) var(--x-md);
   display: flex;
   justify-content: space-between;
@@ -14,8 +15,10 @@
 .logo {
   a {
     display: block;
-    h1 {
-      @extend .h6;
+    position: relative;
+    top: 1px;
+    img {
+      max-height: 50px;
     }
   }
 }

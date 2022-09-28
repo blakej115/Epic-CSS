@@ -1,17 +1,26 @@
 @use '../config' as *;
 
 :root {
+  // Colors
   @each $name, $color in $colors {
     --#{$name}: #{$color};
   }
 
+  // Fonts
   @each $name, $font in $fonts {
     --#{$name}-font: #{$font};
   }
 
+  // Spacing
   @each $axis, $values in $spacing {
     @each $key, $value in $values {
       --#{$axis}-#{$key}: #{$value};
     }
   }
+
+  // One-off Defaults
+  --link-color: #{$link-color};
+  --transition: #{$transition};
+  --border-radius: #{$border-radius};
+  --border: #{$border};
 }

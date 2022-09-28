@@ -90,3 +90,10 @@ $utilities: (
     )
   )
 ) !default;
+
+// One-off Defaults
+
+$link-color: var(--primary) !default;
+$transition: .25s !default;
+$border-radius: 4px !default;
+$border: 1px solid var(--gray) !default;;

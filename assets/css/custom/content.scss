@@ -1,0 +1,8 @@
+.content {
+  a {
+    border-bottom: 1px solid transparent;
+    &:hover {
+      border-color: var(--primary);
+    }
+  }
+}

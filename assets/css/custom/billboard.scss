@@ -1,4 +1,5 @@
 .billboard {
+  background: radial-gradient(circle at center, var(--light), var(--primary));
   min-height: 100vh;
   display: flex;
   justify-content: center;

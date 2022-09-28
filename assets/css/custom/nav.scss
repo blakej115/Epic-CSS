@@ -1,0 +1,18 @@
+.nav {
+  ul {
+    column-gap: var(--x-xs);
+    li {
+      a {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: var(--heading-font);
+        border-radius: var(--border-radius);
+        &:hover,
+        &.nuxt-link-exact-active {
+          background-color: var(--primary);
+          color: var(--light);
+        }
+      }
+    }
+  }
+}

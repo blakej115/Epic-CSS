@@ -1,32 +1,19 @@
 <template>
-  <div class="layout">
-    <Header />
-    <main class="main">
-      <section class="section billboard">
-        <div class="container container-sm">
-          <div class="content ta-center">
-            <h1>Epic CSS</h1>
-            <p>Epic CSS is a lightweight SASS boilerplate and CSS framework that is intended to be edited directly.</p>
-            <p>Epic CSS is intended to be a jumpstart to building user interfaces that would otherwise be written custom from scratch.</p>
-            <p>Copy the <code>assets/epic</code> folder into your project, edit the boilerplate/framework directly, and compile from scss to css.</p>
-            <p>Epic CSS is in it's very early stages. More features and documentation are coming soon.</p>
-            <div class="btns jc-center">
-              <a class="btn-primary" href="https://github.com/blakej115/Epic-CSS" target="_blank">Git Repo</a>
-              <a class="btn-secondary" href="https://github.com/blakej115/Epic-CSS/archive/refs/heads/main.zip" target="_blank">Download Zip</a>
-            </div>
-          </div>
+  <section class="section billboard">
+    <div class="container container-sm">
+      <div class="content ta-center">
+        <img src="../assets/images/logo.svg" alt="Epic CSS">
+        <p>Epic CSS is a lightweight front-end framework and Sass boilerplate with a high level of configuration and extendability.</p>
+        <div class="btns jc-center">
+          <a class="btn-primary" href="/documentation/get-started" target="_blank">Get Started <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-      </section>
-    </main>
-    <Footer />
-  </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 export default {
-  name: 'IndexPage',
-  components: {Footer, Header},
+  name: 'Home',
 }
 </script>
